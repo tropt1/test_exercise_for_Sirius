@@ -28,6 +28,12 @@
 
 ## 🚀 Запуск проекта
 
+### 0. Склонируйте проект
+
+```bash
+git clone https://github.com/tropt1/test_exercise_for_Sirius.git
+```
+
 ### 1. Установите зависимости
 
 - Убедитесь, что установлены [Docker](https://docs.docker.com/get-docker/), [Minikube](https://minikube.sigs.k8s.io/docs/start/) и [Helm](https://helm.sh/docs/intro/install/).
