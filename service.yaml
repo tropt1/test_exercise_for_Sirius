@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-sesrvice
+  name: hello-service
 spec:
   selector:
     app: hello
