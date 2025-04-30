@@ -63,9 +63,10 @@ eval $(minikube docker-env -u)
 ### 4. Разверните веб-сервис
 
 ```bash
-kubectl apply -f kubernetes/deployment.yaml
-kubectl apply -f kubernetes/service.yaml
-kubectl apply -f kubernetes/ingress.yaml
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+kubectl apply -f ingress.yaml
+kubectl apply -f grafana-ingress.yaml
 ```
 
 ### 5. Настройка Prometheus и Grafana
