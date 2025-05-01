@@ -17,13 +17,11 @@
 ├── app/                      # Исходный код веб-сервиса
 │   ├── app.py                # Flask-приложение
 │   └── requirements.txt      # Зависимости Python
-├── kubernetes/               # Конфигурации Kubernetes
-│   ├── deployment.yaml       # Деплоймент приложения
-│   ├── service.yaml          # Сервис для доступа к подам
-│   └── ingress.yaml          # Ingress для внешнего доступа
-└── monitoring/               # Конфигурации мониторинга
-    ├── prometheus-values.yaml# Настройки Prometheus
-    └── grafana-ingress.yaml  # Ingress для Grafana
+└── kubernetes/               # Конфигурации Kubernetes
+    ├── deployment.yaml       # Деплоймент приложения
+    ├── service.yaml          # Сервис для доступа к подам
+    ├── ingress.yaml          # Ingress для внешнего доступа
+    └── grafana-ingress.yaml  # Ingress для внешнего доступа к grafana 
 ```
 
 ## 🚀 Запуск проекта
@@ -63,10 +61,10 @@ eval $(minikube docker-env -u)
 ### 4. Разверните веб-сервис
 
 ```bash
-kubectl apply -f deployment.yaml
-kubectl apply -f service.yaml
-kubectl apply -f ingress.yaml
-kubectl apply -f grafana-ingress.yaml
+kubectl apply -f kubernetes/deployment.yaml
+kubectl apply -f kubernetes/service.yaml
+kubectl apply -f kubernetes/ingress.yaml
+kubectl apply -f kubernetes/grafana-ingress.yaml
 ```
 
 ### 5. Настройка Prometheus и Grafana
