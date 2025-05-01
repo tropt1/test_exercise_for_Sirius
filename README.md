@@ -17,14 +17,11 @@
 ├── app/                      # Исходный код веб-сервиса
 │   ├── app.py                # Flask-приложение
 │   └── requirements.txt      # Зависимости Python
-├── kubernetes/               # Конфигурации Kubernetes
-│   ├── deployment.yaml       # Деплоймент приложения
-│   ├── service.yaml          # Сервис для доступа к подам
-│   └── ingress.yaml          # Ingress для внешнего доступа
-|   └── grafana-ingress.yaml  # Ingress для внешнего доступа к grafana 
-└── monitoring/               # Конфигурации мониторинга
-    ├── prometheus-values.yaml# Настройки Prometheus
-    └── grafana-ingress.yaml  # Ingress для Grafana
+└── kubernetes/               # Конфигурации Kubernetes
+    ├── deployment.yaml       # Деплоймент приложения
+    ├── service.yaml          # Сервис для доступа к подам
+    ├── ingress.yaml          # Ingress для внешнего доступа
+    └── grafana-ingress.yaml  # Ingress для внешнего доступа к grafana 
 ```
 
 ## 🚀 Запуск проекта
