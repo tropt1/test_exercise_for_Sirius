@@ -29,7 +29,7 @@
 ### 0. Склонируйте проект
 
 ```bash
-git clone https://github.com/tropt1/test_exercise_for_Sirius.git
+git clone https://github.com/tropt1/kubernetes-web-monitoring-demo.git
 ```
 
 ### 1. Установите зависимости
